@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Norse-Regular';
+  src:
+    url('./fonts/Norse-Regular.woff2') format('woff2'),
+    url('./fonts/Norse-Regular.woff') format('woff'),
+    url('./fonts/Norse.otf') format('opentype'),
+    url('./fonts/Norse-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Norse-Bold';
+  src:
+    url('./fonts/Norse-Bold.woff2') format('woff2'),
+    url('./fonts/Norse-Bold.woff') format('woff'),
+    url('./fonts/Norsebold.otf') format('opentype'),
+    url('./fonts/Norse-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f0f0f0;
+}
+
+.left {
+  height: 100vh;
+  width: 40vw;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background {
+  background-image: url(./halie-west-25xggax4bSA-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  top: 30vh;
+  left: 20vw;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.logo img {
+  height: 100px;
+  width: 60px;
+}
+
+.logo h1 {
+  font-family: 'Norse-Bold', serif;
+  font-size: 72px;
+  font-weight: 700;
+  color: #ffffff;
+}
